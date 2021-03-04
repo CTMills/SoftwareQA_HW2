@@ -7,10 +7,10 @@ def bmi_option():
     if (bmiAnswer < 18.5):
         bmiCategory = "Underweight"
 
-    elif (bmiAnswer >= 18.5 && bmiAnswer <= 24.9):
+    elif (bmiAnswer >= 18.5 and bmiAnswer <= 24.9):
         bmiCategory = "Normal"
 
-    elif (bmiAnswer >= 25 && bmiAnswer <= 29.9):
+    elif (bmiAnswer >= 25 and bmiAnswer <= 29.9):
         bmiCategory = "Overweight"
 
     else:
