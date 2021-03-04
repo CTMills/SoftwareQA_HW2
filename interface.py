@@ -10,9 +10,11 @@ def menu():
 
         if (choice == 1):
             menu_output = bmi_option()
+            print(menu_output)
 
         elif (choice == 2):
             menu_output = retirement_option()
+            print(menu_output)
 
         elif (choice == 3):
             break
