@@ -1,9 +1,9 @@
 #Caleb Mills
 #Homework 2
-from ..bmi.py import bmi_option
-from ..bmi.py import bmi_calculation
-from ..retirement.py import retirement_calculation
-from ..retirement.py import retirement_option
+from . import bmi_option
+from . import bmi_calculation
+from . import retirement_calculation
+from . import retirement_option
 
 def menu():
     while(1):
