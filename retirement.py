@@ -4,15 +4,16 @@ def retirement_option():
     age = int(input("\nPlease input your age in years: "))
     salary = int(input("\nPlease input your annual salary in dollars: "))
     savedPercent = int(input("\nPlease input percentage saved from salary: "))
+    decimalPercent = savedPercent / 100
     savingsGoal = int(input("\nPlease input you savings goal: "))
-    goalAge = retirement_calculate(age, salary, savedPercent, savingsGoal)
+    goalAge = retirement_calculate(age, salary, decimalPercent, savingsGoal)
     if (goalAge >= 100):
-        goalMet = false
+        goalMet = False
 
     else:
-        goalMet = true
+        goalMet = True
 
-    if (goalMet == true):
+    if (goalMet == True):
         phrase = "\nYou will meet your savings goal by" + str(goalAge) + "years old"
 
     else:
