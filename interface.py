@@ -1,7 +1,7 @@
 #Caleb Mills
 #Homework 2
-from . import bmi
-from . import retirement
+import bmi
+import retirement
 
 def menu():
     while(1):
