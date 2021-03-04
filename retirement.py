@@ -7,12 +7,12 @@ def retirement_option():
     savingsGoal = int(input("\nPlease input you savings goal: "))
     goalAge = retirement_calculate(age, salary, savedPercent, savingsGoal)
     if (goalAge >= 100):
-        goalMet = false
+        goalMet = False
 
     else:
-        goalMet = true
+        goalMet = True
 
-    if (goalMet == true):
+    if (goalMet == True):
         phrase = "\nYou will meet your savings goal by" + str(goalAge) + "years old"
 
     else:
