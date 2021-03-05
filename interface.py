@@ -2,6 +2,7 @@
 #Homework 2
 #ctm364
 
+import math
 from bmi import *
 from retirement import *
 
