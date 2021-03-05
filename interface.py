@@ -9,9 +9,12 @@ from retirement import *
 def menu():
     while(1):
         print("\nMAIN MENU\nPress 1 to calculate your BMI and category\nPress 2 to calculate when you will reach your retirement goal\nPress 3 to exit the app")
-        choice = input("\nEnter your choice: ")
-
-        if (choice == 1):
+        choice = int(input("\nEnter your choice: "))
+        
+        if (choice != int):
+            print("You made an error. Restarting...")
+            
+        elif (choice == 1):
             menu_output = bmi_option()
             if (menu_output != -1):
                 print(menu_output)
