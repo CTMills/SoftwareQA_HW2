@@ -25,5 +25,5 @@ def bmi_calculate (height, weight):
     metricWeight = weight * 0.45
     metricHeight = height * 0.025
     bmiHeight = metricHeight ** 2
-    bmiFinal = metricWeight / bmiHeight
+    bmiFinal = round(metricWeight / bmiHeight, 1)
     return bmiFinal
