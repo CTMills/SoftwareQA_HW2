@@ -13,11 +13,19 @@ def menu():
 
         if (choice == 1):
             menu_output = bmi_option()
-            print(menu_output)
+            if (menu_output != -1):
+                print(menu_output)
+
+            else:
+                print("You made an error. Restarting...")
 
         elif (choice == 2):
             menu_output = retirement_option()
-            print(menu_output)
+            if (menu_output != -1):
+                print(menu_output)
+
+            else:
+                print("You made an error. Restarting...")
 
         elif (choice == 3):
             break

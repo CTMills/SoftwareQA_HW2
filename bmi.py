@@ -1,9 +1,20 @@
 #Caleb Mills
 #Homework Assignment 2
 def bmi_option():
-    heightFeet = int(input("\nPlease insert your height in feet: "))
-    heightInch = int(input("\nPlease insert your height in inches: "))
-    weight = int(input("\nPlease insert your weight in pounds: "))
+    heightFeet = input("\nPlease insert your height in feet: ")
+    heightInch = input("\nPlease insert your height in inches: ")
+    weight = input("\nPlease insert your weight in pounds: ")
+
+    if (heightFeet != int or heightInch != int or weight != int):
+        print("Your weight and height must be a whole number")
+        error = -1
+        return error
+
+    if (heightFeet <= 0 or heightInch <= 0 or weight <= 0):
+        print("Your weight and height cannot be 0 or lower")
+        error = -1
+        return error
+    
     height = (heightFeet * 12) + heightInch
     bmiAnswer = round(bmi_calculate(height, weight), 1)
     if (bmiAnswer < 18.5):
