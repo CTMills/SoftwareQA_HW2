@@ -5,7 +5,7 @@ def bmi_option():
     heightInch = int(input("\nPlease insert your height in inches: "))
     weight = int(input("\nPlease insert your weight in pounds: "))
     height = (heightFeet * 12) + heightInch
-    bmiAnswer = bmi_calculate(height, weight)
+    bmiAnswer = round(bmi_calculate(height, weight), 1)
     if (bmiAnswer < 18.5):
         bmiCategory = "Underweight"
 
